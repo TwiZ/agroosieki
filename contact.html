@@ -20,12 +20,10 @@
 
   <body>
 
+  
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
@@ -48,50 +46,40 @@
       </div>
     </nav>
 
-    <!-- Header with Background Image -->
-    <header class="business-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1 class="display-3 text-center text-white mt-4" style="font-size: 55px;">Agroturystyka Osieki</h1>
-          </div>
-        </div>
-      </div>
-    </header>
-
     <!-- Page Content -->
     <div class="container">
 
       <div class="row">
         <div class="col-sm-8">
-          <h2 class="mt-4">Zapraszamy</h2>
-          <p>Agroturystyka Osieki położona jest 300 metrów od jeziora Jamna oraz 2,5km od plaży w Łazach.</p>
-            <p>Do dyspozycji gości są 3 pokoje od 2-6 osób, jeden wspólny aneks kuchenny oraz wspólna łazienka.</p>
-            <p>Pokoje dostępne są tylko w sezonie letnim. Zapraszamy od czerwca do września.</p>
-            <p>Istnieje możliwość zaparkowania samochodu na podwórzu.</p>
+          <h2 class="mt-4">Kontakt</h2>
+          <address>
+            <br>ul. Bałtycka 18
+            <br>Osieki 76-003
+            <br>
+          </address>
+          <address>
+            <strong>Telefon: </strong>94 3413 298<br/>
+            <strong>Tel. kom.: </strong>500 090 295<br/>
+          </address>
+          <div id="map" style="width:365px;height:400px;background:yellow"></div>
         </div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(54.285126, 16.213812),
+    zoom: 16,
+    mapTypeId: google.maps.MapTypeId.TERRAIN
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+          
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5zDUyAw8pdMhKnTeH0nBQXyFoQj6NDrk&callback=myMap"
+    async defer></script>
       </div>
       <!-- /.row -->
 
-      <div class="row">
-        <div class="col-sm-4 my-4">
-          <div class="card">
-            <img class="card-img-top" src="images/demo%20(1).jpg" alt="">
-          </div>
-        </div>
-        <div class="col-sm-4 my-4">
-          <div class="card">
-            <img class="card-img-top" src="images/demo%20(6).jpg" alt="">
-          </div>
-        </div>
-        <div class="col-sm-4 my-4">
-          <div class="card">
-            <img class="card-img-top" src="images/demo%20(12).jpg" alt="">
-          </div>
-        </div>
-
-      </div>
-      <!-- /.row -->
 
     </div>
     <!-- /.container -->
